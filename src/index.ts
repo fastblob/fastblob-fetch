@@ -21,3 +21,4 @@ async function fetch (input: FetchParams[0], init: FetchParams[1]): FetchReturn 
 }
 
 export default fetch
+export { getFastBlobInputs }

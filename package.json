@@ -2,7 +2,10 @@
   "name": "@fastblob/fastblob-fetch",
   "version": "1.0.0",
   "description": "Fetch Blob using fastblob.com",
-  "main": "index.js",
+  "main": "lib/index.js",
+  "module": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "type": "module",
   "scripts": {
     "build": "tsc",
     "lint": "eslint src/** --fix",

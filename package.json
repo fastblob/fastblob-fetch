@@ -1,0 +1,35 @@
+{
+  "name": "@fastblob/fastblob-fetch",
+  "version": "1.0.0",
+  "description": "Fetch Blob using fastblob.com",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint src/** --fix",
+    "prepublish": "npm run build",
+    "typecheck": "tsc --noEmit",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fastblob/fastblob-fetch.git"
+  },
+  "author": "FastBlob",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fastblob/fastblob-fetch/issues"
+  },
+  "homepage": "https://github.com/fastblob/fastblob-fetch#readme",
+  "dependencies": {
+    "@fastblob/fast-fetch": "^1.0.4"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.43.0",
+    "eslint": "^8.28.0",
+    "eslint-config-standard-with-typescript": "^23.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.5.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "typescript": "^4.8.4"
+  }
+}

@@ -6,7 +6,13 @@ Fetch Blob using [fastblob.com](https://fastblob.com)
 ``` js
 import fetch from "@fastblob/fastblob-fetch";
 
-const response = await fetch("https://example.website.fastblob.com/big-buck-bunny/Big%20Buck%20Bunny_1080p_30fps.mp4")
+// For example, your fastblob domain is `example.website.fastblob.com`
+const url = "https://example.website.fastblob.com/big-buck-bunny/Big%20Buck%20Bunny_1080p_30fps.mp4";
+
+const response = await fetch(url);
+const blob = await response.blob();
+const newURL = URL.createObjectURL(blob);
+console.log(newURL);
 ```
 
 ## More Info
